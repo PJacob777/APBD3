@@ -48,5 +48,15 @@ public class UserServiceTest
         // Assert
         Assert.False(addResult);
     }
-    
+
+    [Fact]
+    public void Decrement_Value_If_Month_Is_Same()
+    {
+        // Arrange
+        var userService = new UserService();
+        // Act
+        var addResult = userService.AddUser("Joff", "Doe", "johndoegmailcom", DateTime.Parse("2010-03-21"), 1);
+        // Assert
+        Assert.
+    }
 }
