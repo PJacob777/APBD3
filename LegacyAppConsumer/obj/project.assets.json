@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/kuba/.nuget/packages/": {}
+    "C:\\Users\\Kuba\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kuba/Szkoła/APBD/zadanie/LegacyAppConsumer/LegacyAppConsumer.csproj",
+      "projectUniqueName": "D:\\APBD\\LegacyAppConsumer\\LegacyAppConsumer.csproj",
       "projectName": "LegacyAppConsumer",
-      "projectPath": "/Users/kuba/Szkoła/APBD/zadanie/LegacyAppConsumer/LegacyAppConsumer.csproj",
-      "packagesPath": "/Users/kuba/.nuget/packages/",
-      "outputPath": "/Users/kuba/Szkoła/APBD/zadanie/LegacyAppConsumer/obj/",
+      "projectPath": "D:\\APBD\\LegacyAppConsumer\\LegacyAppConsumer.csproj",
+      "packagesPath": "C:\\Users\\Kuba\\.nuget\\packages\\",
+      "outputPath": "D:\\APBD\\LegacyAppConsumer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/kuba/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Kuba\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -51,8 +51,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/kuba/Szkoła/APBD/zadanie/LegacyApp/LegacyApp.csproj": {
-              "projectPath": "/Users/kuba/Szkoła/APBD/zadanie/LegacyApp/LegacyApp.csproj"
+            "D:\\APBD\\LegacyApp\\LegacyApp.csproj": {
+              "projectPath": "D:\\APBD\\LegacyApp\\LegacyApp.csproj"
             }
           }
         }
@@ -82,7 +82,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/Users/kuba/.dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Kuba\\.dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
