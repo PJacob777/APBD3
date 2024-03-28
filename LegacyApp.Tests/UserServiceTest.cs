@@ -49,14 +49,28 @@ public class UserServiceTest
         Assert.False(addResult);
     }
 
+    // [Fact]
+    // public void Decrement_Value_If_Month_Is_Same()
+    // {
+    //     // Arrange
+    //     var userService = new UserService();
+    //     // Act
+    //     var addResult = userService.AddUser("Joff", "Doe", "johndoegmailcom", DateTime.Parse("2010-03-21"), 1);
+    //     // Assert
+    //     var now = DateTime.Now;
+    //     int age = now.Year - dateOfBirth.Year;
+    //     if (now.Month < dateOfBirth.Month || (now.Month == dateOfBirth.Month && now.Day < dateOfBirth.Day)) age--;
+    //
+    // }
     [Fact]
-    public void Decrement_Value_If_Month_Is_Same()
+    public void Return_False_When_User_Is_Not_An_Adult()
     {
-        // Arrange
+        //Arange
         var userService = new UserService();
-        // Act
-        var addResult = userService.AddUser("Joff", "Doe", "johndoegmailcom", DateTime.Parse("2010-03-21"), 1);
-        // Assert
-        Assert.
+        //Act
+        var result = userService.AddUser("ds", "asd", "as@.com", DateTime.Today, 1);
+        //Assert
+        Assert.False(result);
     }
+    
 }

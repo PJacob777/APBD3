@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace LegacyApp
 {
@@ -6,12 +7,12 @@ namespace LegacyApp
     {
         public bool AddUser(string firstName, string lastName, string email, DateTime dateOfBirth, int clientId)
         {
-            if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName))
+            if (IsNameEmptyOrNull(firstName)|| IsNameEmptyOrNull(lastName))
             {
                 return false;
             }
 
-            if (!email.Contains("@") && !email.Contains("."))
+            if (IsEmailUncorrect(email))
             {
                 return false;
             }
@@ -20,7 +21,7 @@ namespace LegacyApp
             int age = now.Year - dateOfBirth.Year;
             if (now.Month < dateOfBirth.Month || (now.Month == dateOfBirth.Month && now.Day < dateOfBirth.Day)) age--;
 
-            if (age < 21)
+            if (IsPersonAnAdult(dateOfBirth))
             {
                 return false;
             }
@@ -67,6 +68,21 @@ namespace LegacyApp
 
             UserDataAccess.AddUser(user);
             return true;
+        }
+
+        private bool IsNameEmptyOrNull(String name)
+        {
+            return string.IsNullOrEmpty(name);
+        }
+
+        private bool IsEmailUncorrect(string email)
+        {
+            return !email.Contains("@") && !email.Contains(".");
+        }
+
+        private bool IsPersonAnAdult(DateTime dateTime)
+        {
+            return dateTime.Year - DateTime.Today.Year < 21;
         }
     }
 }
